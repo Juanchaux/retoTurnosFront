@@ -13,7 +13,7 @@ async function getHistorial(jwt, fechaInicio, fechaFin) {
         FechaFin: fechaFin
     };
 
-    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/consultarHistorial`, {
+    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/TurnosAtendidos/consultarHistorial`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
