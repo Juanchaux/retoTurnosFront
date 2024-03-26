@@ -6,7 +6,7 @@
 
 const getSiguienteTurno = async (jwt) => {
   try {
-    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/siguienteTurno/${jwt}`, {
+    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/Turno/siguienteTurno/${jwt}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${jwt}`,
