@@ -5,7 +5,7 @@
  */
 
 async function getTurnosDia(jwt) {
-    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/turnos-atendidos/${jwt}`, {
+    const response = await fetch(`https://backendsistematurnos.azurewebsites.net/TurnosAtendidos/turnos-atendidos/${jwt}`, {
         method: 'GET',
         headers: {
             Authorization: `Bearer ${jwt}`,
